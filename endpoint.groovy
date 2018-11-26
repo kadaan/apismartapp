@@ -422,7 +422,7 @@ def listDevices() {
         deviceItem(device, true)
     } else {
         def result = []
-        result << allDevices.collect{deviceItem(it, false)}
+        result << allDevices.collect{deviceItem(it, true)}
         log.debug "Returning DEVICES: $result"
         result[0]
     }
